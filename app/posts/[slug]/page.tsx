@@ -38,7 +38,7 @@ export default async function PostPage({ params }: Props) {
       <article>
         <header className="mb-8">
           <time className="text-sm text-gray-400">{post.date}</time>
-          <h1 className="text-3xl font-bold text-gray-900 mt-1">{post.title}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mt-1">{post.title}</h1>
           {post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-3">
               {post.tags.map((tag) => (
