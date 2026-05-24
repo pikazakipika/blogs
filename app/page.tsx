@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-12">
       <header className="mb-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">My Blog</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">piakzakipika blog</h1>
         <p className="text-gray-500">思ったことを書く場所</p>
       </header>
 
