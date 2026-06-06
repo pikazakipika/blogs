@@ -31,20 +31,20 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-12">
-      <Link href="/" className="text-sm text-blue-600 hover:underline mb-8 block">
+      <Link href="/" className="text-sm text-blue-600 dark:text-blue-400 hover:underline mb-8 block">
         ← ホームに戻る
       </Link>
 
       <article>
         <header className="mb-8">
-          <time className="text-sm text-gray-400">{post.date}</time>
-          <h1 className="text-4xl font-bold text-gray-900 mt-1">{post.title}</h1>
+          <time className="text-sm text-gray-400 dark:text-gray-500">{post.date}</time>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mt-1">{post.title}</h1>
           {post.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-3">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
+                  className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 px-2 py-0.5 rounded-full"
                 >
                   {tag}
                 </span>
@@ -54,7 +54,7 @@ export default async function PostPage({ params }: Props) {
         </header>
 
         <div
-          className="prose prose-gray max-w-none"
+          className="prose prose-gray dark:prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
       </article>
