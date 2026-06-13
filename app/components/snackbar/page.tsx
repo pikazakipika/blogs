@@ -10,24 +10,24 @@ export default function SnackbarPage() {
     <main className="max-w-2xl mx-auto px-4 py-12">
       <Link
         href="/components"
-        className="text-sm text-blue-600 hover:underline mb-8 block"
+        className="text-sm text-blue-600 dark:text-blue-400 hover:underline mb-8 block"
       >
         ← コンポーネント一覧
       </Link>
 
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">Snackbar</h1>
-      <p className="text-gray-500 mb-10">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Snackbar</h1>
+      <p className="text-gray-500 dark:text-gray-400 mb-10">
         一時的なフィードバックを画面下に表示するコンポーネント。
       </p>
 
-      <section className="border border-gray-200 rounded-xl overflow-hidden mb-10">
-        <div className="bg-gray-50 px-4 py-2 text-xs text-gray-400 border-b border-gray-200">
+      <section className="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden mb-10">
+        <div className="bg-gray-50 dark:bg-gray-800 px-4 py-2 text-xs text-gray-400 border-b border-gray-200 dark:border-gray-700">
           デモ
         </div>
         <SnackbarDemo />
       </section>
 
-      <section className="prose prose-gray max-w-none">
+      <section className="prose prose-gray dark:prose-invert max-w-none">
         <h2>疑問に思ったことをAIとすり合わせてみた</h2>
 
         <h3>そもそもスナックバーはいつ必要か</h3>
