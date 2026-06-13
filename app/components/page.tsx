@@ -10,6 +10,16 @@ const components = [
     name: "Snackbar",
     description: "一時的なフィードバックを画面下に表示する",
   },
+  {
+    slug: "alert",
+    name: "Alert",
+    description: "操作の結果やシステムの状態をページ内に表示する",
+  },
+  {
+    slug: "date-parts",
+    name: "Date Parts",
+    description: "記事、イベント、更新履歴で使う日付表示の小さなパーツ",
+  },
 ];
 
 export default function ComponentsPage() {

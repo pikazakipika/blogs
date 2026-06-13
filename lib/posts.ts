@@ -4,6 +4,16 @@ import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
+const specialPosts: PostMeta[] = [
+  {
+    slug: "affordance-signifier",
+    title: "Affordance / Signifierって何か模索中",
+    date: "2026-06-13",
+    description: "「誰のためのデザイン？」を読んで知った言葉を、手で確かめてみる",
+    tags: ["UI", "design"],
+  },
+];
+
 export type PostMeta = {
   slug: string;
   title: string;
@@ -35,7 +45,7 @@ export function getSortedPostsData(): PostMeta[] {
       } as PostMeta;
     });
 
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return [...allPostsData, ...specialPosts].sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
 export function getAllPostSlugs() {
