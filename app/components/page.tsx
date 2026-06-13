@@ -30,8 +30,8 @@ export default function ComponentsPage() {
       </Link>
 
       <header className="mb-12">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Components</h1>
-        <p className="text-gray-500 dark:text-gray-400">UIコンポーネントを1日1個作って、なぜそのデザインなのかを考える。</p>
+        <h1 className="components-page-strong text-3xl font-bold mb-2">Components</h1>
+        <p className="components-page-muted">UIコンポーネントを1日1個作って、なぜそのデザインなのかを考える。</p>
       </header>
 
       <ul className="space-y-4">
@@ -39,15 +39,15 @@ export default function ComponentsPage() {
           <li key={c.slug}>
             <Link
               href={`/components/${c.slug}`}
-              className="group flex items-center justify-between border border-gray-200 dark:border-gray-700 rounded-xl px-5 py-4 hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
+              className="components-page-card group flex items-center justify-between border rounded-xl px-5 py-4 transition-colors"
             >
               <div>
-                <p className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <p className="components-page-strong font-semibold">
                   {c.name}
                 </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">{c.description}</p>
+                <p className="components-page-muted text-sm mt-0.5">{c.description}</p>
               </div>
-              <span className="text-gray-300 dark:text-gray-600 group-hover:text-gray-500 dark:group-hover:text-gray-300 transition-colors">→</span>
+              <span className="components-page-arrow transition-colors">→</span>
             </Link>
           </li>
         ))}

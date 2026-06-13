@@ -25,3 +25,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.components-page-strong {
+  color: var(--foreground);
+}
+
+.components-page-muted {
+  color: color-mix(in srgb, var(--foreground) 68%, transparent);
+}
+
+.components-page-card {
+  border-color: color-mix(in srgb, var(--foreground) 28%, transparent);
+}
+
+.components-page-card:hover {
+  border-color: color-mix(in srgb, var(--foreground) 48%, transparent);
+}
+
+.components-page-arrow {
+  color: color-mix(in srgb, var(--foreground) 58%, transparent);
+}
