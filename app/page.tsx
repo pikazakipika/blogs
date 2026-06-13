@@ -9,6 +9,13 @@ export default function Home() {
       <header className="mb-12">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">piakzakipika blog</h1>
         <p className="text-gray-500 dark:text-gray-400">思ったことを書く場所</p>
+        <Link
+          href="/components"
+          className="mt-6 inline-flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-800 transition-colors hover:border-gray-500 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-100 dark:hover:border-gray-300 dark:hover:bg-gray-900"
+        >
+          実験場
+          <span aria-hidden="true">→</span>
+        </Link>
       </header>
 
       <section>
