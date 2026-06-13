@@ -27,21 +27,43 @@ body {
 }
 
 .components-page-strong {
-  color: var(--foreground);
+  color: #171717;
 }
 
 .components-page-muted {
-  color: color-mix(in srgb, var(--foreground) 68%, transparent);
+  color: #4b5563;
 }
 
 .components-page-card {
-  border-color: color-mix(in srgb, var(--foreground) 28%, transparent);
+  border-color: #d1d5db;
 }
 
 .components-page-card:hover {
-  border-color: color-mix(in srgb, var(--foreground) 48%, transparent);
+  border-color: #9ca3af;
 }
 
 .components-page-arrow {
-  color: color-mix(in srgb, var(--foreground) 58%, transparent);
+  color: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  .components-page-strong {
+    color: #f5f5f5;
+  }
+
+  .components-page-muted {
+    color: #d4d4d4;
+  }
+
+  .components-page-card {
+    border-color: #d4d4d4;
+  }
+
+  .components-page-card:hover {
+    border-color: #f5f5f5;
+  }
+
+  .components-page-arrow {
+    color: #e5e5e5;
+  }
 }
